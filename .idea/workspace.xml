@@ -2,24 +2,89 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
+      <config projectName="Shell" targetName="WinShell" />
       <config projectName="Shell" targetName="Shell" />
+      <config projectName="Shell" targetName="test_str_utils" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
-      <configuration CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08d8264d-e930-4fb8-87b5-f4a0e752063c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fork_bomb.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fork_bomb.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sigaction.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/argv.c" afterPath="$PROJECT_DIR$/argv.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/argv.h" afterPath="$PROJECT_DIR$/argv.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shell.c" afterPath="$PROJECT_DIR$/shell.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sigaction.h" afterPath="$PROJECT_DIR$/sigaction.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stacktrace.c" afterPath="$PROJECT_DIR$/stacktrace.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/kkyse.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/argvv.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/argvv.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/builtins/alias.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/builtins/alias.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/builtins/builtins.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/builtins/cd.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/builtins/exit.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/builtins/exit.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/builtins/pid.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/builtins/pid.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/builtins/source.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/builtins/source.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/builtins/unalias.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/builtins/unalias.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/chars.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/document_headers.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/generate_makefile.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/headers.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/init.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/preprocessing.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/preprocessing.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/run_commands.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/run_commands.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/shell_io.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/shell_io.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/test_str_utils.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/test_string_builder.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/io_utils.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/io_utils.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/pipes.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/pipes.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/semaphores.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/semaphores.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/shared_locks.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/shared_locks.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/shared_memory.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/shared_memory.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/str_utils.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/str_utils.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/string_builder.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/string_builder.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/utils.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/util/utils.h" />
+      <change beforePath="$PROJECT_DIR$/.idea/Shell.iml" afterPath="$PROJECT_DIR$/.idea/Shell.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/aliases.c" afterPath="$PROJECT_DIR$/aliases.c" />
+      <change beforePath="$PROJECT_DIR$/aliases.h" afterPath="$PROJECT_DIR$/aliases.h" />
+      <change beforePath="$PROJECT_DIR$/argv.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/argv.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/builtins.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/builtins.h" afterPath="$PROJECT_DIR$/builtins/builtins.h" />
+      <change beforePath="$PROJECT_DIR$/cd.c" afterPath="$PROJECT_DIR$/builtins/cd.c" />
+      <change beforePath="$PROJECT_DIR$/cd.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fork_bomb.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/fork_bomb.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/shell.c" afterPath="$PROJECT_DIR$/shell.c" />
+      <change beforePath="$PROJECT_DIR$/shell.h" afterPath="$PROJECT_DIR$/shell.h" />
+      <change beforePath="$PROJECT_DIR$/shell_util.c" afterPath="$PROJECT_DIR$/shell_utils.c" />
+      <change beforePath="$PROJECT_DIR$/shell_util.h" afterPath="$PROJECT_DIR$/shell_utils.h" />
+      <change beforePath="$PROJECT_DIR$/sigaction.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/sigaction.h" afterPath="$PROJECT_DIR$/util/sigaction.h" />
+      <change beforePath="$PROJECT_DIR$/stacktrace.c" afterPath="$PROJECT_DIR$/util/stacktrace.c" />
+      <change beforePath="$PROJECT_DIR$/stacktrace.h" afterPath="$PROJECT_DIR$/util/stacktrace.h" />
+      <change beforePath="$PROJECT_DIR$/test_argv.c" afterPath="$PROJECT_DIR$/test/test_argv.c" />
+      <change beforePath="$PROJECT_DIR$/util.c" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/util.h" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,67 +96,167 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <file leaf-file-name="run_commands.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/run_commands.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shell.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shell.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5080">
-              <caret line="127" column="29" lean-forward="false" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="argv.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/argv.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="127" column="1" lean-forward="false" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
+            <state relative-caret-position="1378">
+              <caret line="320" column="0" lean-forward="true" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
               <folding>
-                <element signature="e#41#58#0" expanded="true" />
+                <element signature="e#42#67#0" expanded="true" />
+                <element signature="e#523#682#0" expanded="false" />
+                <element signature="e#830#1038#0" expanded="false" />
+                <element signature="e#1726#1989#0" expanded="false" />
+                <element signature="e#3533#4321#0" expanded="false" />
+                <element signature="e#7607#7849#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="argv.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/argv.h">
+      <file leaf-file-name="generate_makefile.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generate_makefile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="29" column="54" lean-forward="false" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chars.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chars.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="560">
-              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/init.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="93" column="14" lean-forward="false" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
               <folding>
-                <element signature="e#90#109#0" expanded="true" />
+                <marker date="1512376375048" expanded="true" signature="2619:2651" ph="all:" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exit.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/builtins/exit.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>\\p</find>
+      <find>sigaction</find>
+      <find>off_t</find>
+      <find />
+      <find>unquote</find>
+      <find>&quot;&quot;</find>
+      <find>reall</find>
+      <find>free</find>
+      <find>grew</find>
+      <find>printf</find>
+      <find>EXIT_FAI</find>
+      <find>--*</find>
+      <find>dup2</find>
+      <find>sb.chars</find>
+      <find>command-&gt;_bu</find>
+      <find>(ssize_t</find>
+      <find>read line</find>
+      <find>delimeter</find>
+      <find>delimiter</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>\n</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/fork_bomb.h" />
+        <option value="$PROJECT_DIR$/util/io_utils.h" />
+        <option value="$PROJECT_DIR$/shell_io.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/sigaction.c" />
-        <option value="$PROJECT_DIR$/stacktrace.c" />
-        <option value="$PROJECT_DIR$/sigaction.h" />
-        <option value="$PROJECT_DIR$/fork_bomb.c" />
-        <option value="$PROJECT_DIR$/argv.h" />
+        <option value="$PROJECT_DIR$/util/str_utils.h" />
+        <option value="$PROJECT_DIR$/test/test_str_utils.c" />
+        <option value="$PROJECT_DIR$/builtins/cd.c" />
+        <option value="$PROJECT_DIR$/util/str_utils.c" />
+        <option value="$PROJECT_DIR$/builtins/unalias.c" />
+        <option value="$PROJECT_DIR$/builtins/source.h" />
+        <option value="$PROJECT_DIR$/shell_loop.h" />
+        <option value="$PROJECT_DIR$/argvv.h" />
+        <option value="$PROJECT_DIR$/util/piping.h" />
+        <option value="$PROJECT_DIR$/builtins/builtins.h" />
+        <option value="$PROJECT_DIR$/util/semaphore.h" />
+        <option value="$PROJECT_DIR$/shell_loop.c" />
+        <option value="$PROJECT_DIR$/shell.h" />
+        <option value="$PROJECT_DIR$/util/utils.c" />
+        <option value="$PROJECT_DIR$/util/mutexes.h" />
+        <option value="$PROJECT_DIR$/util/mutexes.c" />
+        <option value="$PROJECT_DIR$/util/shared_memory.c" />
+        <option value="$PROJECT_DIR$/util/locks.h" />
+        <option value="$PROJECT_DIR$/util/locks.c" />
+        <option value="$PROJECT_DIR$/test/test_string_builder.c" />
+        <option value="$PROJECT_DIR$/util/string_builder.c" />
+        <option value="$PROJECT_DIR$/util/stacktrace.h" />
+        <option value="$PROJECT_DIR$/util/string_builder.h" />
+        <option value="$PROJECT_DIR$/util/shared_locks.c" />
+        <option value="$PROJECT_DIR$/util/shared_locks.h" />
+        <option value="$PROJECT_DIR$/util/shared_memory.h" />
+        <option value="$PROJECT_DIR$/aliases.h" />
+        <option value="$PROJECT_DIR$/aliases.c" />
+        <option value="$PROJECT_DIR$/preprocessing.c" />
+        <option value="$PROJECT_DIR$/builtins/pid.h" />
+        <option value="$PROJECT_DIR$/builtins/builtins.c" />
+        <option value="$PROJECT_DIR$/builtins/pid.c" />
+        <option value="$PROJECT_DIR$/init.sh" />
+        <option value="$PROJECT_DIR$/util/utils.h" />
+        <option value="$PROJECT_DIR$/document_headers.py" />
+        <option value="$PROJECT_DIR$/headers.md" />
+        <option value="$PROJECT_DIR$/builtins/source.c" />
+        <option value="$PROJECT_DIR$/shell_utils.h" />
+        <option value="$PROJECT_DIR$/shell_io.c" />
+        <option value="$PROJECT_DIR$/util/stacktrace.c" />
         <option value="$PROJECT_DIR$/shell.c" />
-        <option value="$PROJECT_DIR$/argv.c" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/argvv.c" />
+        <option value="$PROJECT_DIR$/generate_makefile.py" />
+        <option value="$PROJECT_DIR$/builtins/exit.c" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/chars.c" />
+        <option value="$PROJECT_DIR$/run_commands.c" />
       </list>
     </option>
   </component>
@@ -101,6 +266,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1541" />
     <option name="y" value="4" />
@@ -149,6 +315,11 @@
               <item name="Shell" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="Shell" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Shell" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="Shell" type="462c0819:PsiDirectoryNode" />
+              <item name="builtins" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -156,8 +327,24 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../venv3/Scripts/python.exe" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kkyse\workspace\Systems\Shell" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kkyse\workspace\Systems\Shell\test" />
+      <recent name="C:\Users\kkyse\workspace\Systems\Shell\util" />
+      <recent name="C:\Users\kkyse\workspace\Systems\Shell\builtins" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -171,17 +358,69 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Shell">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+  <component name="RunManager" selected="Python.document_headers">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Shell" RUN_TARGET_NAME="Shell" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
     </configuration>
     <configuration name="Shell" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Shell" TARGET_NAME="Shell" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Shell" RUN_TARGET_NAME="Shell">
       <envs />
     </configuration>
-    <list size="2">
+    <configuration name="WinShell" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Shell" TARGET_NAME="WinShell" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Shell" RUN_TARGET_NAME="WinShell">
+      <envs />
+    </configuration>
+    <configuration name="test_str_utils" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Shell" TARGET_NAME="test_str_utils" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Shell" RUN_TARGET_NAME="WinShell">
+      <envs />
+    </configuration>
+    <configuration name="document_headers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Shell" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/document_headers.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="generate_makefile" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Shell" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate_makefile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.Shell" />
+      <item index="2" class="java.lang.String" itemvalue="Application.test_str_utils" />
+      <item index="3" class="java.lang.String" itemvalue="Application.WinShell" />
+      <item index="4" class="java.lang.String" itemvalue="Python.generate_makefile" />
+      <item index="5" class="java.lang.String" itemvalue="Python.document_headers" />
     </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.document_headers" />
+        <item index="1" class="java.lang.String" itemvalue="Python.generate_makefile" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -198,36 +437,48 @@
       <updated>1511297386775</updated>
       <workItem from="1511297388375" duration="2718000" />
       <workItem from="1511381106773" duration="27000" />
+      <workItem from="1511381388616" duration="1590000" />
+      <workItem from="1511666519085" duration="67220000" />
+      <workItem from="1511789433295" duration="2442000" />
+      <workItem from="1511974762142" duration="15259000" />
+      <workItem from="1512069566427" duration="177000" />
+      <workItem from="1512070151227" duration="636000" />
+      <workItem from="1512070865761" duration="6967000" />
+      <workItem from="1512155861262" duration="10414000" />
+      <workItem from="1512223579507" duration="2284000" />
+      <workItem from="1512237592499" duration="1366000" />
+      <workItem from="1512259873072" duration="35620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2745000" />
+    <option name="totallyTimeSpent" value="146720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952252" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293201" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3293201" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2234456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,135 +487,556 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Everything.  It almost works." />
+    <option name="LAST_COMMIT_MESSAGE" value="Everything.  It almost works." />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="CidrExceptionBreakpoint">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="101" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/util/sigaction.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="360">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shell.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5080">
-          <caret line="127" column="29" lean-forward="false" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/argv.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="e#90#109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/argv.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4960">
-          <caret line="124" column="5" lean-forward="true" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
-          <folding>
-            <element signature="e#41#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fork_bomb.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/cygwin64/usr/include/err.h">
+    <entry file="file://$PROJECT_DIR$/util/io_utils.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/5.4.0/include/limits.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1606">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sigaction.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/cygwin64/usr/include/cygwin/signal.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="377" column="25" lean-forward="false" selection-start-line="377" selection-start-column="25" selection-end-line="377" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sigaction.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stacktrace.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1114">
-          <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fork_bomb.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/argv.h">
+    <entry file="file://$PROJECT_DIR$/util/io_utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/pipes.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="13" column="7" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/pipes.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/semaphores.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/semaphores.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/shared_locks.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="e#210#310#0" expanded="false" />
+            <element signature="e#339#452#0" expanded="false" />
+            <element signature="e#509#848#0" expanded="false" />
+            <marker date="1512345844970" expanded="false" signature="547:653" ph="/**...*/" />
+            <marker date="1512345844970" expanded="false" signature="688:805" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/shared_locks.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/shared_memory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#124#277#0" expanded="false" />
+            <element signature="e#313#519#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/shared_memory.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#42#68#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_argv.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builtins/alias.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builtins/builtins.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builtins/cd.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builtins/source.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builtins/unalias.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builtins/unalias.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="15" column="74" lean-forward="false" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builtins/alias.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_commands.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="e#138#310#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shell.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding>
+            <element signature="e#278#378#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shell_io.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="37" column="3" lean-forward="true" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+          <folding>
+            <element signature="e#209#618#0" expanded="false" />
+            <element signature="e#682#823#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shell_utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argvv.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1066">
+          <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <element signature="e#662#1219#0" expanded="false" />
+            <element signature="e#1277#1397#0" expanded="false" />
+            <element signature="e#1669#1863#0" expanded="false" />
+            <element signature="e#1914#2110#0" expanded="false" />
+            <element signature="e#2164#2252#0" expanded="false" />
+            <element signature="e#2298#2400#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aliases.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="113" column="14" lean-forward="true" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
+          <folding>
+            <element signature="e#42#62#0" expanded="false" />
+            <element signature="e#574#747#0" expanded="false" />
+            <element signature="e#574#905#0" expanded="false" />
+            <element signature="e#907#977#0" expanded="false" />
+            <element signature="e#907#1123#0" expanded="false" />
+            <element signature="e#1125#1254#0" expanded="false" />
+            <element signature="e#1125#1408#0" expanded="false" />
+            <element signature="e#1410#1655#0" expanded="false" />
+            <element signature="e#1410#1952#0" expanded="false" />
+            <element signature="e#1954#2040#0" expanded="false" />
+            <element signature="e#1954#2158#0" expanded="false" />
+            <element signature="e#2160#2298#0" expanded="false" />
+            <element signature="e#2300#2593#0" expanded="false" />
+            <element signature="e#2795#2953#0" expanded="false" />
+            <element signature="e#2795#3050#0" expanded="false" />
+            <element signature="e#3052#3213#0" expanded="false" />
+            <element signature="e#3052#3314#0" expanded="false" />
+            <element signature="e#3316#3415#0" expanded="false" />
+            <element signature="e#3316#3627#0" expanded="false" />
+            <element signature="e#4333#4446#0" expanded="false" />
+            <element signature="e#4448#4638#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding>
+            <element signature="e#123#348#0" expanded="false" />
+            <element signature="e#680#878#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#184#314#0" expanded="false" />
+            <element signature="e#316#542#0" expanded="false" />
+            <element signature="e#316#1167#0" expanded="false" />
+            <element signature="e#1382#1688#0" expanded="false" />
+            <element signature="e#1382#1894#0" expanded="false" />
+            <element signature="e#1896#2032#0" expanded="false" />
+            <element signature="e#2034#2184#0" expanded="false" />
+            <element signature="e#2034#2493#0" expanded="false" />
+            <element signature="e#2495#2671#0" expanded="false" />
+            <element signature="e#3160#3336#0" expanded="false" />
+            <element signature="e#3160#3538#0" expanded="false" />
+            <element signature="e#3540#3924#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aliases.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="921">
+          <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <folding>
+            <element signature="e#117#149#0" expanded="false" />
+            <element signature="e#172#346#0" expanded="false" />
+            <element signature="e#401#578#0" expanded="false" />
+            <element signature="e#625#806#0" expanded="false" />
+            <element signature="e#855#1029#0" expanded="false" />
+            <element signature="e#1078#1254#0" expanded="false" />
+            <element signature="e#1303#1502#0" expanded="false" />
+            <element signature="e#1559#1720#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builtins/exit.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="15" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builtins/cd.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builtins/pid.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builtins/builtins.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
           <folding>
-            <element signature="e#90#109#0" expanded="true" />
+            <element signature="e#41#60#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builtins/pid.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#41#57#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/document_headers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shell_utils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shell_io.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="48" column="11" lean-forward="true" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+          <folding>
+            <element signature="e#1031#1146#0" expanded="false" />
+            <element signature="e#1031#1295#0" expanded="false" />
+            <element signature="e#1297#1531#0" expanded="false" />
+            <element signature="e#1297#2616#0" expanded="false" />
+            <element signature="e#2618#2744#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/stacktrace.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1039">
+          <caret line="239" column="8" lean-forward="true" selection-start-line="239" selection-start-column="8" selection-end-line="239" selection-end-column="8" />
+          <folding>
+            <element signature="e#648#1063#0" expanded="false" />
+            <element signature="e#648#1782#0" expanded="false" />
+            <element signature="e#3223#3295#0" expanded="false" />
+            <element signature="e#4152#4390#0" expanded="false" />
+            <element signature="e#4152#6227#0" expanded="false" />
+            <element signature="e#6229#6449#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builtins/source.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shell.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5080">
-          <caret line="127" column="29" lean-forward="false" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
+        <state relative-caret-position="440">
+          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <folding>
+            <element signature="e#260#293#0" expanded="false" />
+            <element signature="e#346#379#0" expanded="false" />
+            <element signature="e#479#524#0" expanded="false" />
+            <element signature="e#711#786#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/headers.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="200">
+            <caret line="851" column="0" lean-forward="true" selection-start-line="851" selection-start-column="0" selection-end-line="851" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="560">
+            <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/str_utils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="80" column="6" lean-forward="false" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/argv.c">
+    <entry file="file://$PROJECT_DIR$/util/str_utils.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="127" column="1" lean-forward="false" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
+        <state relative-caret-position="973">
+          <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/argvv.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="315" column="0" lean-forward="false" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
           <folding>
-            <element signature="e#41#58#0" expanded="true" />
+            <element signature="e#640#1020#0" expanded="false" />
+            <element signature="e#640#2118#0" expanded="false" />
+            <element signature="e#2130#2443#0" expanded="false" />
+            <element signature="e#2813#3118#0" expanded="false" />
+            <element signature="e#3813#4111#0" expanded="false" />
+            <element signature="e#3813#4919#0" expanded="false" />
+            <element signature="e#4921#5080#0" expanded="false" />
+            <element signature="e#4921#5340#0" expanded="false" />
+            <element signature="e#5342#5905#0" expanded="false" />
+            <element signature="e#6710#7304#0" expanded="false" />
+            <element signature="e#9410#9503#0" expanded="false" />
+            <element signature="e#9410#9701#0" expanded="false" />
+            <element signature="e#9703#9790#0" expanded="false" />
+            <element signature="e#9703#10300#0" expanded="false" />
+            <element signature="e#10302#10864#0" expanded="false" />
+            <element signature="e#10866#11000#0" expanded="false" />
+            <element signature="e#11002#11828#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/utils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="844">
+          <caret line="49" column="50" lean-forward="false" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_makefile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="29" column="54" lean-forward="false" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builtins/exit.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="93" column="14" lean-forward="false" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+          <folding>
+            <marker date="1512376375048" expanded="true" signature="2619:2651" ph="all:" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/init.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chars.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_commands.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1378">
+          <caret line="320" column="0" lean-forward="true" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#67#0" expanded="true" />
+            <element signature="e#523#682#0" expanded="false" />
+            <element signature="e#830#1038#0" expanded="false" />
+            <element signature="e#1726#1989#0" expanded="false" />
+            <element signature="e#3533#4321#0" expanded="false" />
+            <element signature="e#7607#7849#0" expanded="false" />
           </folding>
         </state>
       </provider>

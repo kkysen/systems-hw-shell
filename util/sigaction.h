@@ -21,11 +21,4 @@
 
 //int sigemptyset(sigset_t *set);
 
-void add_sigaction(int signal, struct sigaction sig_action);
-
-const int SIGNALS[] = {SIGHUP, SIGINT, SIGQUIT, SIGILL, SIGTRAP, SIGABRT, SIGIOT, SIGEMT, SIGFPE, SIGKILL, SIGBUS,
-                       SIGSEGV, SIGSYS, SIGPIPE, SIGALRM, SIGTERM, SIGURG, SIGSTOP, SIGTSTP, SIGCONT, SIGCHLD, SIGCLD,
-                       SIGTTIN, SIGTTOU, SIGIO, SIGPOLL, SIGXCPU, SIGXFSZ, SIGVTALRM, SIGPROF, SIGWINCH, SIGLOST,
-                       SIGPWR, SIGUSR1, SIGUSR2};
-
 #endif //SYSTEMS_SIGACTION_H

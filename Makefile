@@ -1,34 +1,105 @@
-CC = gcc -ggdb -std=c99 -Wall -Werror -O3
+CC = gcc -ggdb -std=gnu11 -Wall -Werror -O3 -pthread
 OUT = shell
 
-util.o:
-	$(CC) -c util.c
+generate_objects:
+	python3 generate_makefile.py
 
-stacktrace.o:
-	$(CC) -c stacktrace.c
+make: generate_objects
 
-argv.o:
-	$(CC) -c argv.c
+# start generate_objects()
 
-builtins.o:
-	$(CC) -c builtins.c
+aliases.o: 
+	$(CC) -c aliases.c -o aliases.o
 
-cd.o:
-	$(CC) -c cd.c
+argvv.o: 
+	$(CC) -c argvv.c -o argvv.o
 
-aliases.o:
-	$(CC) -c aliases.c
+chars.o: 
+	$(CC) -c chars.c -o chars.o
 
-$(OUT).o:
-	$(CC) -c $(OUT).c
+preprocessing.o: 
+	$(CC) -c preprocessing.c -o preprocessing.o
 
-all: clean $(OUT).o util.o stacktrace.o argv.o builtins.o cd.o aliases.o
-	$(CC) -o $(OUT) $(OUT).o util.o stacktrace.o argv.o builtins.o cd.o aliases.o
+run_commands.o: 
+	$(CC) -c run_commands.c -o run_commands.o
+
+shell.o: 
+	$(CC) -c shell.c -o shell.o
+
+shell_io.o: 
+	$(CC) -c shell_io.c -o shell_io.o
+
+shell_utils.o: 
+	$(CC) -c shell_utils.c -o shell_utils.o
+
+builtins/alias.o: 
+	$(CC) -c builtins/alias.c -o builtins/alias.o
+
+builtins/builtins.o: 
+	$(CC) -c builtins/builtins.c -o builtins/builtins.o
+
+builtins/cd.o: 
+	$(CC) -c builtins/cd.c -o builtins/cd.o
+
+builtins/exit.o: 
+	$(CC) -c builtins/exit.c -o builtins/exit.o
+
+builtins/pid.o: 
+	$(CC) -c builtins/pid.c -o builtins/pid.o
+
+builtins/source.o: 
+	$(CC) -c builtins/source.c -o builtins/source.o
+
+builtins/unalias.o: 
+	$(CC) -c builtins/unalias.c -o builtins/unalias.o
+
+test/test_argv.o: 
+	$(CC) -c test/test_argv.c -o test/test_argv.o
+
+test/test_string_builder.o: 
+	$(CC) -c test/test_string_builder.c -o test/test_string_builder.o
+
+test/test_str_utils.o: 
+	$(CC) -c test/test_str_utils.c -o test/test_str_utils.o
+
+util/io_utils.o: 
+	$(CC) -c util/io_utils.c -o util/io_utils.o
+
+util/pipes.o: 
+	$(CC) -c util/pipes.c -o util/pipes.o
+
+util/semaphores.o: 
+	$(CC) -c util/semaphores.c -o util/semaphores.o
+
+util/shared_locks.o: 
+	$(CC) -c util/shared_locks.c -o util/shared_locks.o
+
+util/shared_memory.o: 
+	$(CC) -c util/shared_memory.c -o util/shared_memory.o
+
+util/stacktrace.o: 
+	$(CC) -c util/stacktrace.c -o util/stacktrace.o
+
+util/string_builder.o: 
+	$(CC) -c util/string_builder.c -o util/string_builder.o
+
+util/str_utils.o: 
+	$(CC) -c util/str_utils.c -o util/str_utils.o
+
+util/utils.o: 
+	$(CC) -c util/utils.c -o util/utils.o
+
+all: clean aliases.o argvv.o chars.o preprocessing.o run_commands.o shell.o shell_io.o shell_utils.o builtins/alias.o builtins/builtins.o builtins/cd.o builtins/exit.o builtins/pid.o builtins/source.o builtins/unalias.o util/io_utils.o util/pipes.o util/semaphores.o util/shared_locks.o util/shared_memory.o util/stacktrace.o util/string_builder.o util/str_utils.o util/utils.o
+	$(CC) -o $(OUT) aliases.o argvv.o preprocessing.o run_commands.o shell.o shell_io.o shell_utils.o builtins/alias.o builtins/builtins.o builtins/cd.o builtins/exit.o builtins/pid.o builtins/source.o builtins/unalias.o util/io_utils.o util/pipes.o util/semaphores.o util/shared_locks.o util/shared_memory.o util/stacktrace.o util/string_builder.o util/str_utils.o util/utils.o
+	make chars
+
+# end generate_objects()
 
 clean:
-	rm -f *.o
+	touch dummy.o
+	find . -name '*.o' -delete
 	rm -f $(OUT)
-	rm -f test_argv
+	rm -f test_*
 
 install: clean all
 
@@ -41,11 +112,19 @@ rerun: all
 valgrind: clean all
 	valgrind -v --leak-check=full ./$(OUT)
 
-test_argv.o:
-	$(CC) -c test_argv.c
-
-test_argv: test_argv.o argv.o stacktrace.o
-	$(CC) -o test_argv test_argv.o argv.o stacktrace.o
+test_argv: test/test_argv.o util/stacktrace.o
+	$(CC) -o test_argv test/test_argv.o test/stacktrace.o
 	./test_argv
 
-test: clean test_argv
+test_str_utils: test/test_str_utils.o util/str_utils.o util/stacktrace.o
+	$(CC) -o test_str_utils test/test_str_utils.o util/str_utils.o util/stacktrace.o
+	./test_str_utils
+
+test_sb: test/test_string_builder.o util/string_builder.o util/stacktrace.o
+	$(CC) -o test_sb test/test_string_builder.o util/string_builder.o util/stacktrace.o
+	valgrind ./test_sb
+
+chars: chars.o
+	$(CC) -o chars chars.o
+
+test: clean test_sb
