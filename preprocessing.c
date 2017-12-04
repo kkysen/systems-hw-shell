@@ -28,7 +28,7 @@ static const char *preprocess_aliases(const Command *const command) {
     bool expanded_aliases = false;
     for (size_t i = 0; i < argc; ++i) {
         const char *const arg = argv[i];
-        print_Command(command);
+//        print_Command(command);
         const char *const alias = get_alias_value(arg);
         if (alias) {
             expanded_aliases = true;

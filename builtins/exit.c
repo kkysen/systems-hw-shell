@@ -6,6 +6,6 @@
 #include "exit.h"
 
 int exit_cmd(const Command *const command) {
-    printf("exiting\n");
+//    printf("exiting\n");
     return EXIT_FAILURE; // terminate while(status) loop
 }

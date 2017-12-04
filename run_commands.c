@@ -30,7 +30,11 @@
  */
 static int exec_single_command(const Command *const command) {
     execvp(command->argv[0], (char **) command->argv);
-    return err("execvp");
+    const char *const cmd_str = Command_to_string(command);
+    fprintf(stderr, "%s couldn't be executed\n", cmd_str);
+    free((char *) cmd_str);
+    return -1;
+    //return err("execvp");
 }
 
 /**
@@ -51,12 +55,12 @@ static int setup_in(const char pre_delim, const Pipe in_pipe) {
         case '|': {
             close(in_pipe.write);
             const int fd = in_pipe.read;
-            printf("dup2(fd, STDIN_FILENO), fd = %d\n", fd);
+//            printf("dup2(fd, STDIN_FILENO), fd = %d\n", fd);
             if (dup2(fd, STDIN_FILENO) == -1) {
                 perror("dup2");
                 return err("dup2 failed on stdin");
             }
-            pd(fileno(stdin));
+//            pd(fileno(stdin));
             break;
         }
         
@@ -77,8 +81,8 @@ static int setup_in(const char pre_delim, const Pipe in_pipe) {
  * @return 0 or -1 if error
  */
 static int setup_out(const char post_delim, const Pipe out_pipe, const Command *const command) {
-    debug();
-    pc(post_delim);
+//    debug();
+//    pc(post_delim);
     switch (post_delim) {
         case 0:
         case ';':
@@ -86,37 +90,37 @@ static int setup_out(const char post_delim, const Pipe out_pipe, const Command *
         
         case '>':
         case '<': {
-            debug();
+//            debug();
             const bool out = post_delim == '>';
             const int old_fd = out ? STDOUT_FILENO : STDIN_FILENO;
             const int flags = out ? O_WRONLY | O_CREAT : O_RDONLY;
             const mode_t mode = out ? S_IRUSR | S_IWUSR : 0;
             const char *const filename = command[1].argv[0];
-            debug();
+//            debug();
             const int new_fd = open(filename, flags, mode);
-            debug();
+//            debug();
             if (new_fd == -1) {
-                debug();
+//                debug();
                 return f_err("open", filename);
             }
-            debug();
+//            debug();
             if (dup2(new_fd, old_fd) == -1) {
-                debug();
+//                debug();
                 return f_err("dup2", filename);
             }
-            debug();
+//            debug();
             break;
         }
         
         case '|': {
             close(out_pipe.read);
             const int fd = out_pipe.write;
-            fprintf(stderr, "dup2(fd, STDOUT_FILENO), fd = %d\n", fd);
+//            fprintf(stderr, "dup2(fd, STDOUT_FILENO), fd = %d\n", fd);
             if (dup2(fd, STDOUT_FILENO) == -1) {
                 perror("dup2");
                 return err("dup2 failed on stdout");
             }
-            pd(fileno(stdout));
+//            pd(fileno(stdout));
             break;
         }
         
@@ -125,7 +129,7 @@ static int setup_out(const char post_delim, const Pipe out_pipe, const Command *
             return err("illegal delimiter");
         }
     }
-    debug();
+//    debug();
     return 0;
 }
 
@@ -149,20 +153,20 @@ static int run_single_command(const Command *const command, const Builtin *const
                               const char pre_delim, const char post_delim,
                               const Pipe in_pipe, const Pipe out_pipe,
                               atomic_int *const num_processes_ready) {
-    debug();
+//    debug();
     
     if (setup_in(pre_delim, in_pipe) == -1 || setup_out(post_delim, out_pipe, command) == -1) {
         return -1;
     }
     
-    debug();
-    print_Command(command);
-    p("syncing");
+//    debug();
+//    print_Command(command);
+//    p("syncing");
     // must sync all processes here so that
     // execution never starts before pipes and dupes are set up
-    printf("[%d] num_processes_ready (pre): %d\n", getpid(), *num_processes_ready);
+//    printf("[%d] num_processes_ready (pre): %d\n", getpid(), *num_processes_ready);
     (*num_processes_ready)--;
-    printf("[%d] num_processes_ready (post): %d\n", getpid(), *num_processes_ready);
+//    printf("[%d] num_processes_ready (post): %d\n", getpid(), *num_processes_ready);
     for (int i = 0; i < 10000 && *num_processes_ready; ++i) {
 //        if (i % 1000 == 0) {
 //            pd(i);
@@ -171,8 +175,8 @@ static int run_single_command(const Command *const command, const Builtin *const
             return -1;
         }
     }
-    debug();
-    
+//    debug();
+//
     if (pre_delim == '<' || pre_delim == '>') {
         // do nothing for redirected file
         return EXIT_SUCCESS;
@@ -181,14 +185,13 @@ static int run_single_command(const Command *const command, const Builtin *const
         int ret_val = builtin->call(command);
         
         // undo dup2
-        fprintf(stderr, "un-dup2'ing\n");
+//        fprintf(stderr, "un-dup2'ing\n");
         if (pre_delim == '|' || post_delim == '<') {
-            fprintf(stderr, "undup2 stdin\n");
+//            fprintf(stderr, "undup2 stdin\n");
             dup2(STDIN_FILENO, in_pipe.read);
         } else if (post_delim == '>' || post_delim == '|') {
             dup2(STDOUT_FILENO, out_pipe.write);
-            fprintf(stderr, "undup2 stdout\n");
-            p("dskdfhfjkl;e;fsjjldkbkjhvc");
+//            fprintf(stderr, "undup2 stdout\n");
         }
         
         return ret_val;
@@ -228,7 +231,7 @@ static pid_t setup_and_run_single_command(const Command *const command, const si
         }
         
         if (cpid == 0) {
-            debug();
+//            debug();
             run_single_command(); // execvp failed
             return -1;
         } else {
@@ -251,11 +254,15 @@ static pid_t setup_and_run_single_command(const Command *const command, const si
  *      or -1 if error
  */
 static int run_commands(const Commands *const commands) {
-    debug();
-    printf("[%d] running commands\n", getpid());
+//    debug();
+//    printf("[%d] running commands\n", getpid());
     
     using_argvv_cc();
-    Pipe *const pipes = (Pipe *) malloc((argvc - 1) * sizeof(Pipe));
+    Pipe *const pipes = (Pipe *) malloc(argvc * sizeof(Pipe));
+    for (int i = 0; i < (int) argvc - 1; ++i) {
+        pipes[i].read = -1;
+        pipes[i].write = -1;
+    }
     
     // need to mmap this to share memory across processes
     atomic_int *num_processes_ready = malloc_shared(sizeof(atomic_int));
@@ -282,23 +289,14 @@ static int run_commands(const Commands *const commands) {
     pid_t *const cpids = (pid_t *) malloc(argvc * sizeof(pid_t));
     for (size_t i = 0; i < argvc; ++i) {
         const Command *const command = argvv + i;
-        
-        if (argvv[i].post_delimiter[0] == '|') {
-            char *s = "hello";
-            if (write(pipes[i].write, s, strlen(s)) == -1) {
-                perror("write");
-            }
-        }
-        
-        
         const pid_t cpid = setup_and_run_single_command(command, i, pipes, num_processes_ready);
         cpids[i] = cpid;
         if (cpid == -2) {
             return EXIT_FAILURE;
         }
         if (cpid == -1) {
-            debug();
-            p("exiting early");
+//            debug();
+//            p("exiting early");
             *num_processes_ready = -1; // signal to children to end
             break;
         }
@@ -310,20 +308,23 @@ static int run_commands(const Commands *const commands) {
             continue;
         }
         int status;
-        p("\t\twaiting for: ");
-        print_Command(argvv + i);
+//        p("\t\twaiting for: ");
+//        print_Command(argvv + i);
         waitpid(cpids[i], &status, WUNTRACED);
-        debug();
+//        debug();
         status = WEXITSTATUS(status);
-        p("\t\twaited for: ");
-        print_Command(argvv + i);
-        debug();
-
+//        p("\t\twaited for: ");
+//        print_Command(argvv + i);
+//        debug();
+        
+        // must send EOF myself b/c other programs don't do it
         if (argvv[i].post_delimiter[0] == '|') {
-            char eof = EOF;
-            if (write(pipes[i].write, &eof, sizeof(char)) == -1) {
-                perror("write");
+            if (close(pipes[i].write) == -1) {
+                perror("close");
+                errno = 0; // suppress
             }
+//            p("closed");
+//            print_Command(argvv + i);
         }
         
         if (total_ret_val == EXIT_SUCCESS) {

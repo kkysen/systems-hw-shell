@@ -18,6 +18,10 @@
   ordering correctly, but basic correct ordering is handled correctly,
   and simple incorrect ordering causes 
   the shell to say there is a syntax error.
+ 
+* Handles most quoting, 
+  i.e. you can put characters like `|` inside quotes
+  and they won't be interpreted as a pipe.
   
 * Multiple commands can be separated by `;`s.
 
@@ -27,9 +31,10 @@
 
 * Stdout and stdin can be piped from one command to the next using `|`.
 
-* An arbitrary number of pipes, redirects, and command separators
-  can be used as allowable 
-  (i.e. you can pipe after redirecting stdout, for example)
+* More than one pipe and redirect can be combine.
+  For example, you can do `ls | wc > wc.txt`.
+  This doesn't allows work, though 
+  (see Features Attempted and Bugs for more details).
 
 * You can add aliases using the `alias` command, just like in bash.
   `alias` will list all current aliases.
@@ -55,6 +60,8 @@
 
 * `popen(3)` is never used to interpret any commands, 
   because `popen` just calls bash and that would be cheating.
+  This actually makes the entire program fundamentally harder,
+  so doing it without bash through popen is a big accomplishment.
 
 * If anything does happen to go wrong, 
   a signal handler is set that will print out a stacktrace
@@ -63,6 +70,18 @@
   because it synchronizes before printing to stderr.
 
 ### Features Attempted
+* *Many pipes and redirects*
+  I intended for an arbitrary number of pipes and redirects
+  to work, but I wasn't able to do so in time.
+  However, more than one can still be used in many cases.
+  Piping and then redirecting works, 
+  and piping and then running another command separated by a `;` works,
+  but piping three or more commands 
+  or doing 2 pipe commands separated by a `;` doesn't work.
+  Running multiple simple commands (no piping or redirecting) 
+  works for any number of commands, 
+  but all the commands are executed simultaneously.
+
 * *Synchronizing sub-commands before executing*
   In order to pipe or redirect, after fork'ing but before execvp'ing,
   the file descriptors need to be changed.
@@ -80,11 +99,25 @@
 
 
 ### Bugs
-* Piping and redirecting don't currently work with builtin commands.
+* Piping and redirecting don't currently work with builtin commands
+  (but it does with aliased commands).
   There are only a few of them though (cd, exit, source, pid, and alias)
   and there's no important reason to pipe or redirect them.
   
-* Typing Ctrl+C are sending a signal won't just kill the currently
+* *Many pipes and redirects*
+    (same as in Features Attempted, kind of a bug, too)
+    I intended for an arbitrary number of pipes and redirects
+    to work, but I wasn't able to do so in time.
+    However, more than one can still be used in many cases.
+    Piping and then redirecting works, 
+    and piping and then running another command separated by a `;` works,
+    but piping three or more commands 
+    or doing 2 pipe commands separated by a `;` doesn't work.
+    Running multiple simple commands (no piping or redirecting) 
+    works for any number of commands, 
+    but all the commands are executed simultaneously.
+  
+* Typing Ctrl+C and sending a signal won't just kill the currently
   running command.  The shell will intercept the signal 
   (most of the common ones) and print a stacktrace 
   for the parent (the shell) and 

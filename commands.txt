@@ -1,0 +1,15 @@
+echo NORMAL TEST
+ls
+cd ..
+pwd
+echo SEMICOLON TEST
+ps ; echo HELLO
+echo STDOUT REDIRECT TEST
+w > wholist
+cat wholist
+echo STDIN REDIRECT TEST
+tr a-z A-Z < wholist
+echo PIPE TEST
+ls | wc
+rm wholist
+exit

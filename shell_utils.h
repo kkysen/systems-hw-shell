@@ -14,7 +14,7 @@
 
 #define SHELL "shell"
 
-#define DEBUG_SHELL true
+#define DEBUG_SHELL false
 
 #define shell_perror() perror(SHELL)
 

@@ -292,7 +292,7 @@ static void parse_command(const char *const command_to_parse, Command *const com
 
 ssize_t parse_commands(char *line, Commands *commands) {
     const ssize_t num_commands = find_num_commands(line);
-    pz(num_commands);
+//    pz(num_commands);
     if (num_commands < 0) {
         return num_commands;
     }
